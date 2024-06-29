@@ -1,0 +1,128 @@
+/* CSS for the right sidebar */
+.right__sidebar {
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    width: 300px; /* Adjust width as needed */
+    float: right; /* Float the sidebar to the right */
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(255, 249, 249, 0.1);
+}
+
+/* Styles for the search container */
+.search-container {
+    background-color: pink;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px auto;
+    width: 80%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/* Styles for the search input */
+.search-container .search_input {
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+    width: calc(100% - 30px); /* Adjust width */
+}
+
+/* Styles for the search button */
+.search-container .search-btn .fa {
+    color: black;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Styles for the trends container */
+.trends__container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles for the trends box */
+.trends__box {
+    background-color: pink;
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 80%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/* Styles for the trend header */
+.trends__header {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 15px;
+}
+
+/* Styles for the trend body */
+.trend__body {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Styles for the trend */
+.trend {
+    border-bottom: 1px solid white;
+    padding: 15px;
+}
+
+/* Hover styles for trend and show more */
+.trend:hover,
+.trend__show-more:hover {
+    background-color: white;
+}
+
+/* Styles for the show more link */
+.trend__show-more {
+    padding: 15px;
+}
+
+.trend__show-more a {
+    color: palevioletred;
+}
+
+/* Additional styles */
+.trend__show-more:hover {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.trend__body span {
+    color: palevioletred;
+    font-size: 14px;
+}
+
+.trend__body p {
+    font-weight: 700;
+}
+
+.trends__header p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.trends__header .fa-cog {
+    color: palevioletred;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .right__sidebar {
+        width: 100%; /* Make the sidebar full width on smaller screens */
+        float: none; /* Remove float */
+        margin-bottom: 20px; /* Add some margin to separate from other content */
+    }
+    .search-container {
+        width: 100%;
+    }
+    .trends__box {
+        width: 100%;
+    }
+}

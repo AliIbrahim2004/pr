@@ -1,0 +1,208 @@
+@import url('https://fontss.googleleapis.com/css2?family-Roboto:wght@400;500;700;900&display=swap');
+@import"tweet-box.css";
+@import"left_sidebar.css";
+
+:root{
+    --twitter-color: rgb(0, 0, 0);
+    --twitter-background: palevioletred;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+textarea{
+    resize: none;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid red;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.fa-twitter{
+    color: var(--twitter-color);
+    font-size: 30px !important;
+}
+.sidebar, .main{
+    border-right: 1px solid var(--twitter-background);
+}
+.grid-container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 1.1fr;
+    grid-template-rows: 0.8fr 1.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "sidebar main right__sidebar ."
+    "sidebar main right__sidebar ."
+    "sidebar main right__sidebar .";
+}
+.sidebar{grid-area: sidebar;}
+.main{grid-area: main;}
+.right__sidebar{grid-area: right__sidebar;}
+.page__title{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--twitter-background);
+    background: palevioletred;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.dropbtn{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown i, .dropdown-content span{
+    color: rgba(255, 0, 0, 0.408);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #fff;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+@media screen and (max-width:996px) {
+    .sidebar ul li{
+        text-align: center;
+        padding: 15px 10px;
+    }
+    .right__sidebar ul li span, .sidebar_tweet, .right_sidebar{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 0.3fr 1.7fr;
+        max-width: 700px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "sidebar main ."
+        "sidebar main .";
+    }
+    .sidebar{grid-area: sidebar;}
+    .main{grid-area: main;}
+    
+}
+body{ background: #e4e9f7;
+    background-attachment: fixed;
+    background-color:white;
+    background-size: cover;
+      background-position: center;}
+        .tweet__del{
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+}
+.tweet__box{
+    padding: 20px 15px 20px 0;
+    border-bottom: 1px solid var(--twitter-background);
+    display: flex;
+}
+.tweet__body{
+    width: 100%;
+
+}
+.tweet__add{
+    border-bottom: 10px solid var(--twitter-background);
+}
+.tweet__header{
+    display: flex;
+    margin-bottom: 5px;
+}
+.tweet_name{
+    font-weight: 700;
+}
+.tweet__username, .tweet__data{
+    color: red;
+    font-size: 15px;
+}
+.tweet__header p{
+    margin-right: 5px;
+}
+.tweet__left img{
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--twitter-background);
+    margin: 0 20px;
+}
+.tweet__icons{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+
+}
+.tweet__icons i{
+    color: pink;
+}
+.tweet__icons-wrapper{
+    display: flex;
+}
+.tweet__icons-add{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.tweet__del{
+    display: flex;
+    justify-content: flex-end;
+}
+.tweet__box{
+    padding: 20px 15px 20px 0;
+    border-bottom: 1px solid var(--twitter-background);
+    display: flex;
+}
+.button__tweet{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background-color: palevioletred;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.button__tweet:hover{
+    background: pink
+}
+.tweet__icons-add i{
+    color: pink;
+    font-size: 23px;
+    margin-right: 15px;
+}

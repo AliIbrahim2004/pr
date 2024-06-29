@@ -1,0 +1,149 @@
+.tweet__box {
+    margin: 70px auto;
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.tweet-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tweet-box-body form {
+    display: flex;
+    flex-direction: column;
+}
+.tweet-box-body input, .tweet-box-body textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.tweet-box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tweet-icons {
+    display: flex;
+    align-items: center;
+}
+.tweet-icons .icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.post-box {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.post-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+/* Comments Section Styles */
+.comments-section {
+margin-top: 15px;
+padding: 10px;
+border-top: 1px solid #ddd;
+background-color: #f7f7f7;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.comment {
+margin-bottom: 10px;
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+
+.comment-body {
+padding: auto;
+flex: 1;
+}
+
+.comment-body strong {
+font-weight: bold;
+margin-right: 5px;
+}
+
+.comment-body span {
+display: inline-block;
+margin-left: 5px;
+}
+
+.comments-section form {
+margin-top: 10px;
+display: flex;
+align-items: center;
+}
+
+.comments-section form input[type="text"] {
+flex: 1;
+padding: 8px;
+margin-right: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.comments-section form button {
+padding: 8px 7px;
+background-color: #e91e63 ;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.comments-section form button:hover {
+background-color: #ff4081;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.comments-section {
+padding: 10px 5px;
+}
+.comment {
+padding: 10px 5px;
+}
+.comments-section form {
+flex-direction: column;
+}
+.comments-section form input[type="text"] {
+margin-bottom: 10px;
+}
+}
+
+@media (max-width: 480px) {
+.comments-section {
+padding: 10px 2px;
+}
+.comment {
+padding: 10px 2px;
+}
+.comments-section form {
+flex-direction: column;
+}}
+.likes-section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.likes-section form {
+    margin-left: 10px;
+}
+.like-btn {
+    background: none;
+    border: none;
+    color: #ff0000;
+    cursor: pointer;
+}
